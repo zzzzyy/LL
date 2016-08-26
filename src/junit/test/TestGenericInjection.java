@@ -10,7 +10,7 @@ import com.atguigu.spring.action.UserAction;
 public class TestGenericInjection {
 
 	ApplicationContext ioc = new ClassPathXmlApplicationContext("beans.xml");
-	
+	//是
 	@Test
 	public void test() {
 		UserAction userAction = (UserAction)ioc.getBean("userAction");
