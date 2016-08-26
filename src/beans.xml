@@ -23,7 +23,7 @@
 		<property name="driverClass" value="${jdbc.driverClassName}"></property>
 	</bean>
 	
-	<!-- 将Hibernate框架的SessionFactory交给Spring的IOC容器来管理；实现了FactoryBean接口。 -->
+	<!-- 将Hibernate框架的SessionFactory交给Spring的IOC容器来管理；实现了FactoryBean接口啊。 -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="classpath:hibernate.cfg.xml"/>
